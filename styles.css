@@ -1,0 +1,16 @@
+div {
+  text-transform: none;
+  font-variant: normal;
+  font-style: normal;
+  padding: 10px;
+  margin: 4% auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-basis: auto;
+  align-self: auto;
+  justify-content: flex-start;
+  cursor: auto;
+}
+
