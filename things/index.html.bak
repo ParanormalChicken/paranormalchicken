@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link type="text/css" rel="stylesheet" href="../styles.css">
+    <title>Things, on ParanormalChicken's webthing</title>
+  </head>
+  <body>
+    <div id="header"> <box class="pad" id="lpad"></box> <box class="pad" id="rpad"></box>
+      <div id="title">Things</div>
+    </div>
+    <div id="backdrop"> <box id="droop"></box>
+      <nav> <a class="navbar" id="home" type="link" href="../index.html"> Home
+        </a> <a class="navbar" id="things"> Things </a> </nav>
+      <div class="blurb">
+        <div class="blurbtop">
+          <div class="blurbtitle"> Things will be here! </div>
+        </div>
+        <div class="main">
+          <p>I will put things here :D <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

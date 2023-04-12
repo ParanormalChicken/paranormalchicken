@@ -1,13 +1,12 @@
-div.main {
-  padding: 30px;
-  margin: 15px;
-  border-radius: 30px;
+.main {
+  border-radius: 0px 30px 30px;
   align-items: flex-start;
   flex-basis: auto;
   align-self: auto;
   justify-content: flex-start;
   cursor: auto;
   background-color: #f6f1f9;
+  padding: 15px 30px;
 }
 
 body {
@@ -36,12 +35,15 @@ body {
   border-width: 0px;
   border-style: none;
   background-color: #f6f1f9;
+  font-size: 12pt;
+  color: #120116;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
 
 nav {
   display: grid;
-  -webkit-grid-column-gap: 30px;
-  grid-column-gap: 30px;
   -webkit-grid-auto-flow: column;
   grid-auto-flow: column;
 }
@@ -71,6 +73,7 @@ nav {
   justify-content: space-between;
   display: inline-block;
   z-index: 1;
+  float: right;
 }
 
 #rpad {
@@ -105,6 +108,18 @@ nav {
   margin-right: 0px;
   flex-direction: row;
   overflow: hidden;
+  display: inline-block;
+}
+
+.blurb {
+  margin: 15px;
+}
+
+.blurbtitle {
+  padding: 15px 30px 0px;
+  font-weight: bold;
+  background-color: #f6f1f9;
+  border-radius: 30px 30px 0px 0px;
   display: inline-block;
 }
 
