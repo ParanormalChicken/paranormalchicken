@@ -11,7 +11,7 @@
     </div>
     <div id="backdrop"> <box id="droop"></box>
       <nav> <a class="navbar" id="home"> Home </a> <a class="navbar" id="things"
-          type="link" href="things/"> Things </a> </nav>
+          type="link" href="things/index.html"> Things </a> </nav>
       <div class="blurb">
         <div class="blurbtop">
           <div class="blurbtitle"> Hello!! </div>
