@@ -6,21 +6,29 @@
     <title>ParanormalChicken's webthing</title>
   </head>
   <body>
-    <div id="header"> <box class="pad" id="lpad"></box> <box class="pad" id="rpad"></box>
-      <div id="title">Paranormalchicken's Webthing</div>
-    </div>
-    <div id="backdrop"> <box id="droop"></box>
-      <nav> <a class="navbar" id="home"> Home </a> <a class="navbar" id="things"
-          type="link" href="things/"> Things </a> </nav>
-      <div class="blurb">
-        <div class="blurbtop">
-          <div class="blurbtitle"> Hello!! </div>
+    <nav id="titlebox">
+      <ul id="bar">
+        <li id="title"> <a href="/" type="link"> Paranormalchicken's Webthing </a>
+        </li>
+        <li class="navbar"> <a type="link" href="things/">Things</a> </li>
+        <li class="navbar"> <a type="link" href="now/">Now</a> </li>
+      </ul>
+    </nav>
+    <main id="backdrop">
+      <section class="blurb">
+        <h1 class="blurbtitle"> Hello!!</h1>
+        <div class="blurbtext">
+          <p> Welcome to my website!!<br>
+            It's under construction, so there's not much to do right now</p>
         </div>
-        <div class="main">
-          <p> Welcome to my website!!! <br>
-            It's under construction, so there's not much to do right now </p>
+      </section>
+      <section class="blurb">
+        <h1 class="blurbtitle"> :)</h1>
+        <div class="blurbtext">
+          <p>hi how are you</p>
         </div>
-      </div>
-    </div>
+      </section>
+      <img src="signature%202023.svg" alt="Webpage Designed by ParanormalChicken in 2023"
+        title="ParanormalChicken Watermark" id="watermark"> </main>
   </body>
 </html>
