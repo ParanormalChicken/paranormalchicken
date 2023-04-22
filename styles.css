@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,700;1,8..144,400;1,8..144,700&display=swap');
+
 body {
   box-sizing: border-box;
   background-color: #e0def9;
-  font-family: "Arial", "Helvetica", "sans-serif";
+  font-family: "Roboto Serif" "Times New Roman", "Times", "serif";
   color: #120116;
   padding: 0px 30px;
   margin: 0px;
