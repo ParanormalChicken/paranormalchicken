@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,700;1,8..144,400;1,8..144,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0..1,8..144,100..700&display=swap");
 
 body {
   box-sizing: border-box;
   background-color: #e0def9;
-  font-family: "Roboto Serif" "Times New Roman", "Times", "serif";
+  font-family: "Roboto Serif", "Times New Roman", "Times", "serif";
   color: #120116;
   padding: 0px 30px;
   margin: 0px;
@@ -32,6 +32,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   display: flex;
+  column-gap: 15px;
 }
 
 .blurbtext {
@@ -44,11 +45,11 @@ body {
 
 #titlebox {
   box-sizing: border-box;
-  font-weight: bold;
+  font-weight: 400;
   background-color: #efecfa;
   padding: 0px 60px 0px 0px;
   border-radius: 0px 60px 0px 0px;
-  font-size: 18pt;
+  font-size: 12pt;
   z-index: 0;
   margin: 30px auto 0px;
   text-align: left;
@@ -63,41 +64,85 @@ body {
 #title {
   background-color: #e0def9;
   margin: 0px 15px 0px 0px;
-  padding: 15px 60px 15px 0px;
+  padding: 0px;
   z-index: 0;
   border-radius: 0px 0px 60px;
   overflow: hidden;
   order: 0;
-  font-weight: bold;
-  height: 30px;
+  font-weight: 700;
+  font-size: 14pt;
+  height: 60px;
   text-overflow: clip;
   color: #120116;
-  min-width: 90px;
-  flex-shrink: 1;
+  min-width: 120px;
+  flex-shrink: 0;
   flex-grow: 0;
   float: left;
   text-align: left;
   font-variant: normal;
   text-decoration: none;
   justify-content: flex-start;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
 }
 
 .navbar {
-  border-radius: 0px 0px 60px 60px;
+  border-radius: 0px 0px 30px 30px;
   border-width: 0px;
   border-style: none;
   background-color: #f6f1f9;
-  color: #120116;
-  text-decoration: none;
   text-align: center;
-  padding: 15px;
   margin: 0px 15px;
-  height: 30px;
+  height: 60px;
   min-width: 90px;
+  flex-grow: 0;
+  flex-shrink: 1;
+transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 0.5s ease 0s;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
   align-items: stretch;
-  align-self: flex-start;
+  align-self: center;
+  position: relative;
+}
+
+.navlink {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+#homelink {
+  padding-left: 0px;
+  padding-right: 60px;
+}
+
+.navbar:hover {
   flex-grow: 1;
   flex-shrink: 0;
+  font-weight: 700;
+  border-radius: 0px 0px 60px 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #120116;
+transition: color 0.5s ease 0s;
+}
+
+a:visited {
+  color: #120116;
+}
+
+a:hover {
+  color: #430b18;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #430b18;
 }
 
 .blurb {
@@ -114,7 +159,7 @@ body {
 
 .blurbtitle {
   padding: 15px 30px 0px;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #f6f1f9;
   border-radius: 30px 30px 0px 0px;
   display: inline-block;
@@ -148,87 +193,14 @@ header {
   background-color: #e0def9;
 }
 
-a {
-  text-decoration: none;
-  color: #120116;
-}
-
 #bar {
   padding: 0px;
   margin: 0px;
   display: flex;
-  align-items: flex-start;
-  align-self: flex-start;
+  align-items: center;
   list-style-type: none;
   flex-direction: row;
   justify-content: space-between;
   overflow: auto;
 }
 
-/*
-@media screen and (max-width: 1000px){
-  #titlebox {
-    height: auto;
-    box-sizing: border-box;
-    font-weight: bold;
-    background-color: #efecfa;
-    padding: 0px 0px 0px 0px;
-    border-radius: 0px;
-    font-size: 18pt;
-    z-index: 0;
-    margin: 30px auto 0px;
-    text-align: center;
-    top: 0px;
-    left: 0px;
-    max-width: 1000px;
-    text-decoration: none;
-    color: #120116;
-  }
-  #bar {
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    list-style-type: none;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
-  }
-  .navbar {
-    border-radius: 0px;
-    border-width: 0px;
-    border-style: none;
-    background-color: #f6f1f9;
-    color: #120116;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px;
-    margin: 0px 15px;
-    height: 30px;
-    min-width: 90px;
-    align-items: center;
-    align-self: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-  #title {
-    background-color: #e0def9;
-    margin: 0px 15px;
-    padding: 15px;
-    z-index: 0;
-    border-radius: 0px;
-    overflow: hidden;
-    font-weight: bold;
-    height: 30px;
-    text-overflow: clip;
-    color: #120116;
-    min-width: 90px;
-    flex-shrink: 1;
-    flex-grow: 0;
-    font-variant: normal;
-    text-decoration: none;
-    justify-content: flex-start;
-  }
-}
-*/
