@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <link type="text/css" rel="stylesheet" href="../styles.css">
+    <link type="text/css" rel="stylesheet" href="/css/styles.css">
     <title>Links, on ParanormalChicken's webthing</title>
   </head>
   <body>
     <nav id="titlebox">
       <ul id="bar">
-        <li id="title"> <a class="navlink" id="homelink" href="../" type="link">
+        <li id="title"> <a class="navlink" id="homelink" href="/" type="link">
             Paranormalchicken's Webthing </a> </li>
-        <li class="navbar"> <a class="navlink" href="../things/" type="link">
+        <li class="navbar"> <a class="navlink" href="/things/" type="link">
             Things </a> </li>
-        <li class="navbar"> <a class="navlink" href="../now/" type="link">Now</a>
+        <li class="navbar"> <a class="navlink" href="/now/" type="link">Now</a>
         </li>
-        <li class="navbar"> <a class="navlink" href="../brain/" type="link">Brain</a>
+        <li class="navbar"> <a class="navlink" href="/brain/" type="link">Brain</a>
         </li>
-        <li class="navbar" id="selected"> <a class="navlink" href="../links/" type="link">Links</a>
+        <li class="navbar" id="selected"> <a class="navlink" href="/links/" type="link">Links</a>
         </li>
       </ul>
     </nav>
@@ -29,14 +29,13 @@
       <section class="blurb">
         <h1 class="blurbtitle"> Toki Pona webring!</h1>
         <div class="blurbtext" id="sike-pona"> <span id="left"> <a href="https://sike.pona.la/jan/soweli%20Eweke/prev.html"
-              id="prev">? prev</a> </span><span id="mid"><a
-              href="https://sike.pona.la"> <img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg">
+              id="prev">&#8592; prev</a> </span><span id="mid"><a href="https://sike.pona.la">
+              <img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg">
               sike pona <img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg">
-            </a></span><span id="right">
-            <a href="https://sike.pona.la/jan/soweli%20Eweke/next.html" id="next">next
-              ?</a> </span> </div>
+            </a></span><span id="right"> <a href="https://sike.pona.la/jan/soweli%20Eweke/next.html"
+              id="next">next &#8594;</a> </span> </div>
       </section>
-      <img src="../signature%202023.svg" alt="Webpage Designed by ParanormalChicken in 2023"
+      <img src="/images/signature%202023.svg" alt="Webpage Designed by ParanormalChicken in 2023"
         title="ParanormalChicken Watermark" id="watermark"> </main>
   </body>
 </html>
