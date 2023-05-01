@@ -272,3 +272,53 @@ a:active {
   text-decoration: underline;
   color: #430b18;
 }
+
+#scrollbuttons {
+  box-sizing: border-box;
+  list-style-type: none;
+  align-self: center;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  column-gap: 15px;
+  align-items: stretch;
+  width: calc(100vw - 15px);
+  max-width: 600px;
+  justify-content: space-between;
+  margin: 15px;
+  z-index: 2;
+}
+
+.scrollthings {
+  display: flex;
+  align-self: stretch;
+  text-align: center;
+  border-radius: 15px;
+transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 0.5s ease 0s;
+}
+
+.scrollthings:hover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.scrolllink {
+  width: 100%;
+  border-radius: 30px;
+  border-width: 0px;
+  border-style: none;
+  color: #120116;
+  background-color: #e0def9;
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+#top {
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
