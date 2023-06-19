@@ -1,10 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0..1,8..144,100..700&display=swap");
+:root {
+  --black: #120116;
+  --darkblack: #010014;
+  --lightblack:#430B18;
+  --white: #EFECFA;
+  --darkwhite:#E0DEF9;
+  --lightwhite:#F6F1F9;
+  --grey: #8A92AD;
+  --red: #E42424;
+  --orange: #F15F05;
+  --yellow: #FFD726;
+  --green: #33923B;
+  --cyan: #14D3FF;
+  --blue: #303BA9;
+  --purple: #892490;
+  --pink: #F25B9A;
+  --primary: #C5EE92;
+  --secondary: #0F997E;
+  --tertiary: #AD1457;
+  --quaternary: #FFB66B;
+  --error: var(--red);
+  --warn: var(--yellow);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --bg: var(--darkblack);
+    --mg: var(--black);
+    --fg: var(--lightblack);
+    --text: var(--lightwhite);
+    --alttext: var(--white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --text: var(--black);
+    --alttext: var(--lightblack);
+    --bg: var(--darkwhite);
+    --mg: var(--white);
+    --fg: var(--lightwhite);
+  }
+}
+
 
 body {
   box-sizing: border-box;
-  background-color: #e0def9;
+  background-color: var(--bg);
   font-family: "Roboto Serif", "Times New Roman", "Times", "serif";
-  color: #120116;
+  color: var(--text);
   padding: 0px 30px;
   margin: 0px;
   justify-content: center;
@@ -16,11 +60,11 @@ body {
 #backdrop {
   box-sizing: border-box;
   height: calc(100vh - 120px);
-  background-color: #efecfa;
+  background-color: var(--mg);
   padding: 15px;
   margin: 0px auto 30px;
   border-radius: 60px 0px 0px 60px;
-  color: #120116;
+  color: var(--text);
   overflow: auto;
   overflow-wrap: normal;
   clear: both;
@@ -39,14 +83,14 @@ body {
   margin: 0px;
   border-radius: 0px 30px 30px;
   cursor: auto;
-  background-color: #f6f1f9;
+  background-color: var(--fg);
   padding: 15px 30px;
 }
 
 #titlebox {
   box-sizing: border-box;
   font-weight: 400;
-  background-color: #efecfa;
+  background-color: var(--mg);
   padding: 0px 60px 0px 0px;
   border-radius: 0px 60px 0px 0px;
   font-size: 12pt;
@@ -62,7 +106,7 @@ body {
 }
 
 #title {
-  background-color: #e0def9;
+  background-color: var(--bg);
   margin: 0px 15px 0px 0px;
   padding: 0px;
   z-index: 0;
@@ -73,7 +117,7 @@ body {
   font-size: 14pt;
   height: 60px;
   text-overflow: clip;
-  color: #120116;
+  color: var(--text);
   min-width: 120px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -91,7 +135,7 @@ body {
   border-radius: 0px 0px 30px 30px;
   border-width: 0px;
   border-style: none;
-  background-color: #f6f1f9;
+  background-color: var(--fg);
   text-align: center;
   margin: 0px auto;
   height: 60px;
@@ -153,7 +197,7 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 
 .blurbtitle {
   padding: 15px 30px 0px;
   font-weight: 700;
-  background-color: #f6f1f9;
+  background-color: var(--fg);
   border-radius: 30px 30px 0px 0px;
   display: inline-block;
   margin: 0px;
@@ -165,7 +209,7 @@ header {
 
 #watermark {
   padding: 15px;
-  background-color: #e0def9;
+  background-color: var(--bg);
   width: 90px;
   height: 90px;
   border-radius: 60px 60px 0px;
@@ -183,7 +227,7 @@ header {
 }
 
 #selected {
-  background-color: #e0def9;
+  background-color: var(--bg);
 }
 
 #sike-pona * {
@@ -227,7 +271,7 @@ header {
   margin: 0px 15px;
   height: 45px;
   min-width: 60px;
-  background-color: #e0def9;
+  background-color: var(--bg);
   flex-grow: 0;
   flex-shrink: 1;
 transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.1s;
@@ -256,21 +300,21 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.1s;
 
 a {
   text-decoration: none;
-  color: #120116;
+  color: var(--text);
 transition: color 0.5s ease 0s;
 }
 
 a:visited {
-  color: #120116;
+  color: var(--text);
 }
 
 a:hover {
-  color: #430b18;
+  color: var(--alttext);
 }
 
 a:active {
   text-decoration: underline;
-  color: #430b18;
+  color: var(--alttext);
 }
 
 #scrollbuttons {
@@ -281,7 +325,7 @@ a:active {
   position: absolute;
   bottom: 15px;
   column-gap: 15px;
-  align-items: stretch;
+  align-items: center;
   width: calc(100vw - 15px);
   max-width: 600px;
   justify-content: space-between;
@@ -290,11 +334,14 @@ a:active {
 }
 
 .scrollthings {
-  display: flex;
-  align-self: stretch;
+  display: inline-flex;
+  align-self: end;
   text-align: center;
   border-radius: 15px;
-transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 0.5s ease 0s;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight: 400;
+transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
 }
 
 .scrollthings:hover {
@@ -304,21 +351,99 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 
 }
 
 .scrolllink {
+  box-sizing: border-box;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
   border-width: 0px;
   border-style: none;
-  color: #120116;
-  background-color: #e0def9;
-  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 15px 30px;
   text-align: center;
-  margin: 15px;
-  vertical-align: baseline;
+  margin: 0px;
   cursor: pointer;
+  transition: border-radius 0.5s ease 0s;
+}
+
+.scrollthings:hover .scrolllink, scrollthings:hover .jumptos {
+  border-radius: 60px 60px 0 0;
+}
+
+.jumptos {
+  list-style-type: none;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  border-width: 0px;
+  border-style: none;
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 15px 30px;
+  text-align: center;
+  margin: 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: border-radius 0.5s ease 0s;
+}
+
+.jumptos:hover {
+  border-radius: 60px 60px 0 0;
 }
 
 #top {
   margin-top: -15px;
   margin-bottom: 30px;
+}
+
+.jumpthing {
+  display: flex;
+  font-weight: 400;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: auto;
+  max-height: 0px;
+  font-size: 0pt;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--fg);
+  border-radius: 30px;
+  transition: margin 0.5s ease 0.2s, flex-grow 0.5s ease 0.1s, font-size 0.3s ease 0.2s, max-height 0.5s ease 0.2s, font-weight 0.1s ease 0.3s;
+  text-align: center;
+}
+
+.jumptos:hover .jumpthing {
+  max-height: 1000px;
+  font-size: 12pt;
+  margin: 15px;
+}
+
+.jumplink {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 0px;
+  cursor: pointer;
+  padding: 0px;
+  align-self: stretch;
+  margin: 0px;
+  transition: padding 0.5s ease 0.2s, max-height 0.5s ease 0.2s;
+}
+
+.jumptos:hover .jumplink {
+  max-height: 1000px;
+  padding: 15px;
+}
+
+.jumpthing:hover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-weight: 700;
 }
 

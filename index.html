@@ -22,13 +22,12 @@
     </nav>
     <main id="backdrop"> <a id="top"></a>
       <section class="blurb">
-        <h1 class="blurbtitle"> Hello!!</h1>
+        <h1 class="blurbtitle" id="Hello"> Hello!!</h1>
         <p class="blurbtext"> Welcome to my website!!<br>
-          It's under construction, so there's not much to do right
-          now</p>
+          It's under construction, so there's not much to do right now</p>
       </section>
       <section class="blurb">
-        <h1 class="blurbtitle"> :)</h1>
+        <h1 class="blurbtitle" id="Smiley"> :)</h1>
         <p class="blurbtext"> hi how are you<br>
           <br>
           <br>
@@ -83,11 +82,17 @@
           egg</p>
       </section>
       <ul id="scrollbuttons">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-        <li class="scrollthings"> <a class="scrolllink" href="../" type="link"><span
-              class="material-symbols-rounded"> arrow_back </span></a> </li>
-        <li class="scrollthings"> <a class="scrolllink" href="#top"><span class="material-symbols-rounded">
-              vertical_align_top </span></a> </li>
+        <li class="scrollthings"> <a class="scrolllink" href="../" type="link">
+            Back </a> </li>
+        <li class="scrollthings">
+          <ul class="jumptos">
+            Jump to...
+            <li class="jumpthing"><a class="jumplink" href="#Hello" type="link">Hello!!</a></li>
+            <li class="jumpthing"><a class="jumplink" href="#smiley" type="link">:)</a></li>
+          </ul>
+        </li>
+        <li class="scrollthings"> <a class="scrolllink" href="#top"> To top </a>
+        </li>
       </ul>
       <img src="signature%202023.svg" alt="Webpage Designed by ParanormalChicken in 2023"
         title="ParanormalChicken Watermark" id="watermark"> </main>
