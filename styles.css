@@ -43,6 +43,20 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    flex-grow: 1 !important;
+  }
+}
+
+:focus {
+  box-shadow: inset 0 0 0 5px var(--primary) !important;
+  border-radius: 0px !important;
+  outline: none;
+  transition: none !important;
+}
 
 body {
   box-sizing: border-box;
@@ -175,11 +189,22 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s, border-radius 
   padding-right: 60px;
 }
 
-.navbar:hover {
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-weight: 700;
-  border-radius: 0px 0px 60px 60px;
+@media not (prefers-reduced-motion) {
+  .navbar:hover {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 700;
+    border-radius: 0px 0px 60px 60px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .navbar:hover {
+    outline-width: 5px; 
+    outline-style: solid;
+    outline-color: var(--primary);
+    outline-offset: -5px;
+  }
 }
 
 .blurb {
@@ -276,11 +301,21 @@ header {
   flex-shrink: 1;
 transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.1s;
 }
+@media not (prefers-reduced-motion) {
+  #sike-pona #left:hover, #sike-pona #right:hover, #sike-pona #mid:hover {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+}
 
-#sike-pona #left:hover, #sike-pona #right:hover, #sike-pona #mid:hover {
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-weight: 700;
+@media (prefers-reduced-motion) {
+  #sike-pona #left:hover, #sike-pona #right:hover, #sike-pona #mid:hover {
+    outline-width: 5px; 
+    outline-style: solid;
+    outline-color: var(--primary);
+    outline-offset: -5px;
+  }
 }
 
 #sike-pona .tokipona {
@@ -344,11 +379,14 @@ a:active {
 transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
 }
 
-.scrollthings:hover {
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-weight: 700;
+@media not (prefers-reduced-motion) {
+  .scrollthings:hover {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
 }
+
 
 .scrolllink {
   box-sizing: border-box;
@@ -363,10 +401,6 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
   margin: 0px;
   cursor: pointer;
   transition: border-radius 0.5s ease 0s;
-}
-
-.scrollthings:hover .scrolllink, scrollthings:hover .jumptos {
-  border-radius: 60px 60px 0 0;
 }
 
 .jumptos {
@@ -390,8 +424,19 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
   transition: border-radius 0.5s ease 0s;
 }
 
-.jumptos:hover {
-  border-radius: 60px 60px 0 0;
+@media not (prefers-reduced-motion) {
+  .scrollthings:hover .scrolllink, .scrollthings:hover .jumptos {
+    border-radius: 60px 60px 0 0;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .scrollthings:hover .scrolllink, .scrollthings:hover .jumptos {
+    outline-width: 5px; 
+    outline-style: solid;
+    outline-color: var(--primary);
+    outline-offset: -5px;
+  }
 }
 
 #top {
@@ -449,9 +494,19 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
   padding: 15px;
 }
 
-.jumpthing:hover {
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-weight: 700;
+@media not (prefers-reduced-motion) {
+  .jumpthing:hover {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
 }
 
+@media (prefers-reduced-motion) {
+  .jumpthing:hover{
+    outline-width: 5px; 
+    outline-style: solid;
+    outline-color: var(--secondary);
+    outline-offset: -5px;
+  }
+}
