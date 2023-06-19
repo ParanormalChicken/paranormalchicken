@@ -308,7 +308,7 @@ a:visited {
   color: var(--text);
 }
 
-a:hover {
+a:hover, a:focus {
   color: var(--alttext);
 }
 
@@ -417,7 +417,11 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
   text-align: center;
 }
 
-.jumptos:hover .jumpthing {
+.jumptos:focus-within .jumpthing {
+  transition: none !important;
+}
+
+.jumptos:hover .jumpthing, .jumptos:focus-within .jumpthing {
   max-height: 1000px;
   font-size: 12pt;
   margin: 15px;
@@ -436,7 +440,11 @@ transition: flex-grow 0.5s ease 0.1s, font-weight 0.1s ease 0.3s;
   transition: padding 0.5s ease 0.2s, max-height 0.5s ease 0.2s;
 }
 
-.jumptos:hover .jumplink {
+.jumptos:focus-within .jumplink {
+  transition: none !important;
+}
+
+.jumptos:hover .jumplink, .jumptos:focus-within .jumplink {
   max-height: 1000px;
   padding: 15px;
 }
