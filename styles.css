@@ -61,11 +61,6 @@
 body {
   box-sizing: border-box;
   background-color: var(--bg);
-  background-image: linear-gradient(to right, transparent, 10%, var(--bg) 20%, var(--bg) 80%, 90%, transparent), url("arcade pattern.png");
-  background-size: 2000px, 256px;
-  background-position: center;
-  background-blend-mode: normal, screen;
-  background-repeat: no-repeat, repeat;
   font-family: "Roboto Serif", "Times New Roman", "Times", "serif";
   color: var(--text);
   padding: 0px 30px;
